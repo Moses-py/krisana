@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Krisana Vigus</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <link href="https://fonts.googleapis.com/css?family=Italianno&display=swap" rel="stylesheet">
@@ -10,55 +12,66 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".logo-img-div").click(function(){
+                    $(".mobile-navigation").slideToggle('slow');
+                });
+            });
+        </script>
     </head>
     <body>
         
-        <section id="navigation">
-            <div class="container text-center pt-4">
-                <a href="">
-                    <img src="img/738d28a0fb988d9a24c7b36bab651ad3.w2700.h2700.png" alt="" class="logo-img rounded-circle">
-                </a>
+
+        <section id="navigation" class="fullscreen-nav">
+            <div class="container text-center pt-4 logo-img-div">
+                <img src="img/738d28a0fb988d9a24c7b36bab651ad3.w2700.h2700.png" alt="" class="logo-img rounded-circle">
+                <div class="down-icon">
+                    <i class="fas fa-sort-down"></i>
+                </div>
             </div>
-            <hr style="width: 50%" class="">
-            <div class="container d-flex justify-content-center">
-                <ul class="nav text-center">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                                Home
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="#product-section" class="nav-link">
-                                Products
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about-section" class="nav-link">
-                                About Us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#product-section" class="nav-link">
-                                Consultancy
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#contact-us" class="nav-link">
-                                Contact Us
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                            <a href="#newsletter" class="nav-link">
-                                    Newsletter
+            <div class="mobile-navigation state">
+                <hr style="width: 50%" class="">
+                <div class="container text-center">
+                    <ul class="nav list-unstyled text-center d-flex justify-content-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                    Home
                             </a>
-                    </li>
-                </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#product-section" class="nav-link">
+                                    Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about-section" class="nav-link">
+                                    About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#product-section" class="nav-link">
+                                    Consultancy
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="#contact-us" class="nav-link">
+                                    Contact Us
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                                <a href="#newsletter" class="nav-link">
+                                        Newsletter
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr style="width: 50%" class="">
             </div>
-            <hr style="width: 50%" class="">
 
             <div class="container">
                 <div class="row">
@@ -71,7 +84,7 @@
                                         Krisana Vigus
                                 </h1>
                                 <hr class="hr">
-                                <p class="text-right motto-text">
+                                <p class="motto-text">
                                     ...Simple, Pure and result-driven
                                 </p>
                         </div>
@@ -80,12 +93,12 @@
                 </div>
             </div>
         </section>
-        <hr style="width: 50%" class="mt-5 pt-5">
+        <hr style="width: 50%" class="mt-5 pt-5 hr-about-us">
         <section id="about-section" class="py-5">
             <div class="container my-5">
                 <div class="row">
                         <div class="col-md-6 text-left">
-                                <h2 style="color: goldenrod">
+                                <h2 class="h2-style" style="color: goldenrod">
                                     ABOUT US
                                 </h2>
                                 <hr style="width: 100%">
@@ -117,23 +130,23 @@
                 </div>
             </div>
         </section>
-        <hr style="width: 50%" class="mt-5 pt-5">
+        <hr style="width: 50%" class="mt-3 pt-3">
         <section id="product-section">
-            <div class="container my-5">
+            <div class="container my-3 text-center">
                 <div class="container mx-auto text-center">
-                    <h2 style="color: goldenrod">
+                    <h2 class="h2-style" style="color: goldenrod">
                         OUR PRODUCTS
                     </h2>
                 </div>
                 <div class="my-5">
-                    <p class="my-4" style="color: goldenrod; font-size: 25px;">
+                    <p class="signature-text" class="my-4">
                         The Signature Collection
                     </p>
                     <p>
                         The signature collection containing all six of your favorite 
                         Krisana Vigus skincare products in our seasonal gift wrap. Includes: 
                     </p>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li class="collection list my-1 py-2 px-2">Body Smoother</li>
                         <li class="collection list my-1 py-2 px-2" style="background: rgb(247, 244, 244)">Eye Serum</li>
                         <li class="collection list my-1 py-2 px-2">Regenerating Moisture Cream</li>
@@ -148,13 +161,13 @@
                             <i class="fab fa-twitter" style="color: goldenrod"></i>
                     </div>
                     <div class="container text-center">
-                        <p class="includes-the-following my-5 py-3">
+                        <p class="signature-text my-5 py-3">
                             Includes the Following
                         </p>
                     </div>
-                    <div class="row text-left">
+                    <div class="row text-center">
                         <div class="col-md-3">
-                            <img src="img/stand-alones/NESQ-radiancefacialmask-2.png" style="height: 250px; width: 250px" alt="">
+                            <img src="img/stand-alones/NESQ-radiancefacialmask-2.png" alt="" class="product-images">
                             <a href="" class="product-title">Radiance Facial Mask</a>
                             <p class="product-price">$35.00</p>
                             <p class="product-description">
@@ -172,7 +185,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <img src="img/stand-alones/Exfoliant.png" style="height: 250px; width: 250px" alt="" class="product-images">
+                            <img src="img/stand-alones/Exfoliant.png" alt="" class="product-images">
                             <a href="" class="product-title">Gentle Exfoliant</a>
                             <p class="product-price">$35.00</p>
                             <p class="product-description">
@@ -190,7 +203,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <img src="img/stand-alones/Body_Smoother.png" style="height: 250px; width: 250px" alt="" class="product-images">
+                            <img src="img/stand-alones/Body_Smoother.png" alt="" class="product-images">
                             <a href="" class="product-title">Body Smoother</a>
                             <p class="product-price">$49.00</p>
                             <p class="product-description">
@@ -208,7 +221,7 @@
                                 </div>
                         </div>
                         <div class="col-md-3">
-                            <img src="img/stand-alones/NESQ-FacialToner.png" style="height: 250px; width: 250px" alt="" class="product-images">
+                            <img src="img/stand-alones/NESQ-FacialToner.png" alt="" class="product-images">
                             <a href="" class="product-title">Facial Toner</a>
                             <p class="product-price">$49.00</p>
                             <p class="product-description">
@@ -229,8 +242,8 @@
                         </div>
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
-                                        <img src="img/stand-alones/Moisture-Cream.png" style="height: 400px; width: 300px" alt="" class="product-images">
+                                <div class="col-md-6 pt-0">
+                                        <img src="img/stand-alones/Moisture-Cream.png" style="height: 400px; width: 300px" alt="" class="product-images1">
                                         <p>
                                             <a href="" class="product-title">Regenerating Moisture Cream</a>
                                         </p>
@@ -251,7 +264,7 @@
                                                 </div>
                                 </div>
                                 <div class="col-md-6">
-                                        <img src="img/stand-alones/Eye-Serum.png" style="height: 300px; width: 300px" alt="" class="product-images">
+                                        <img src="img/stand-alones/Eye-Serum.png" style="height: 300px; width: 300px" alt="" class="product-images2">
                                         <p>
                                             <a href="" class="product-title">Eye Serum</a>
                                         </p>
@@ -281,40 +294,40 @@
             </div>
         </section>
         <hr style="width: 50%" class="mt-5 pt-5">
-        <section id="contact-us" class="contact-background-image my-5 py-5"
+        <section id="contact-us" class="contact-background-image my-1 py-3"
         style="background-image: url('img/stand-alones/shutterstock_311546150_1-1.jpg');
-            background-attachment: fixed; background-position: center center; background-size: cover;">
+            background-attachment: fixed;background-repeat: no-repeat; background-position: center; background-size: cover;">
             <div class="container py-5">
-                <h2 class="h2-responsive text-center py-2 my-4" style="color: goldenrod">
+                <h2 class="h2-style text-center my-2" style="color: goldenrod">
                     CONTACT US
                 </h2>
-                <hr style="width: 50%" class="mb-5 pb-5">
+                <hr style="width: 50%" class="mb-3">
                 <div class="row">
                     <div class="col-md-5 mb-4">
-                        <h4 class="h4-responsive font-weight-bold my-5" style="color: goldenrod">
+                        <h4 class="h4-style font-weight-bold my-5" style="color: goldenrod">
                             Getting in touch is easy
                         </h4>
 
-                        <p class="font-weight-bold my-5">
+                        <p class="font-weight-bold p-style my-5">
                            Stylish Map of Earth <br>
                            
                         </p>
                         <p class="find-us-here" style="color: black">
-                            <a href="" style="color: black">Find us here</a>
+                            <a href="" class="p-style" style="color: black">Find us here</a>
                             <hr style="border: .5px solid goldenrod">
                         </p>
-                        <p class="find-us-here" style="color: black">
-                            <a href="" style="color: black">dantereus1@gmail.com</a>
+                        <p class="find-us-here p-style" style="color: black">
+                            <a href="" class="p-style" style="color: black">dantereus1@gmail.com</a>
                             <hr style="border: .5px solid goldenrod">
                         </p>
 
                         <div class="icons-list">
                             <div class="social-icons">
-                                <i class="fab fa-facebook-f" style="font-size: 18px; color: goldenrod; margin: 0 5px;"></i>
-                                <i class="fab fa-pinterest-p" style="font-size: 18px; color: goldenrod; margin: 0 5px;"></i>
-                                <i class="fab fa-twitter" style="font-size: 18px; color: goldenrod; margin: 0 5px;"></i>
-                                <i class="fab fa-instagram" style="font-size: 18px; color: goldenrod; margin: 0 5px;"></i>
-                                <i class="fab fa-medium" style="font-size: 18px; color: goldenrod; margin: 0 5px;"></i>
+                                <i class="fab fa-facebook-f" style="font-size: 16px; color: goldenrod; margin: 0 5px;"></i>
+                                <i class="fab fa-pinterest-p" style="font-size: 16px; color: goldenrod; margin: 0 5px;"></i>
+                                <i class="fab fa-twitter" style="font-size: 16px; color: goldenrod; margin: 0 5px;"></i>
+                                <i class="fab fa-instagram" style="font-size: 16px; color: goldenrod; margin: 0 5px;"></i>
+                                <i class="fab fa-medium" style="font-size: 16px; color: goldenrod; margin: 0 5px;"></i>
                             </div>
                         </div>
                     </div>
@@ -327,7 +340,7 @@
                                 <input type="email" class="emailbox" placeholder="Your Email" required>
                             </div>
                             <div class="content">
-                                <textarea class="p-3" cols="70" rows="10" placeholder="Write us about anything. We'd love to hear from you!" required></textarea>
+                                <textarea class="p-2" style="height: 200px; width: 90%" placeholder="Write us about anything. We'd love to hear from you!" required></textarea>
                             </div>
                             <div class="submitbtn my-5">
                                 <button class="button" type="submit">
@@ -342,32 +355,32 @@
         
         <section id="newsletter" class="mb-5 pb-5">
             <div class="container text-center py-5">
-                <h1 class="h1-responsive py-3">
+                <h2 class="h2-style py-3">
                     Join Our Newsletter
-                </h1>
+                </h2>
                 <form action="">
                     <div class="names py-4">
                         <input type="text" class="newsletter-name-input" placeholder="First Name" required>
                         <input type="text" class="newsletter-name-input" placeholder="Last Name" required>
                     </div>
     
-                    <div class="email py-4">
+                    <div class="email pb-4">
                         <input type="email" class="newsletter-email-input" placeholder="Email Address" required>
                     </div>
     
-                    <div class="signup py-3 my-5">
+                    <div class="signup py-3">
                         <button class="signupbutton" type="submit">
                             SIGNUP
                         </button>
                     </div>
                 </form>
 
-                <p class="py-5 text-muted">
+                <p class="p-style py-5 text-muted">
                     We respect your privacy
                 </p>
             </div>
             <div class="copyright text-center">
-                <p style="color: goldenrod">
+                <p class="p-style mx-3" style="color: goldenrod">
                     Developed by Dante || 2020. All Rights Reserved.
                 </p>
             </div>
@@ -377,5 +390,6 @@
 
 
         <script src="js/index.js"></script>
+
     </body>
 </html>

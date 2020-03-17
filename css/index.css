@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    width: 100%;
+}
+
 
 .avatar-img {
     height: 30px!important; 
@@ -12,11 +16,15 @@ html {
     height: 50px;
     width: 50px;
 }
-
+.down-icon {
+    display: none;
+    margin-bottom: 20px;
+    padding: 0;
+    color: goldenrod
+}
 .nav-link {
     padding: 0 20px;
     font-size: 17px;
-    /* font-weight: bold; */
     color: goldenrod;
 }
 
@@ -66,13 +74,30 @@ a {
 }
 .motto-text {
     font-size: 17px;
+    text-align: right;
 }
 
+.signature-text {
+    color: goldenrod;
+    font-size: 25px;
+}
 .product-description {
     font-size: 13px;
 }
 .product-images {
     text-align: left;
+    height: 250px;
+    width: 250px;
+}
+.product-images1 {
+    text-align: left;
+    height: 400px;
+    width: 300px;
+}
+.product-images2 {
+    text-align: left;
+    height: 300px;
+    width: 300px;
 }
 
 .product-title {
@@ -197,4 +222,197 @@ input::placeholder, textarea::placeholder {
 .newsletter-name-input::placeholder {
     color: goldenrod;
     font-size: 14px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+    .product-img {
+        height: 300px;
+        width: 95%;
+    }
+    .class-y {
+        display: block;
+        font-size: 50px;
+        font-family: 'Italianno', cursive;
+        color: goldenrod;
+        text-align: center
+    }
+    .motto-text {
+        font-size: 13px;
+        text-align: center;
+        font-style: italic;
+    }
+    .hr {
+        width: 70%;
+        margin: 0 15%;
+    }
+    .hr-about-us {
+        display: none;
+    }
+    .h2-style {
+        font-size: 23px;
+        
+    }
+    .h4-style {
+        font-size: 18px;
+        
+    }
+
+    .p-style {
+        font-size: 14px;
+    }
+    .carousel-item {
+        width: 90%;
+        height: 300px;
+    }
+
+    .signature-text {
+        color: goldenrod;
+        font-size: 20px;
+    }
+
+    .namebox, .emailbox {
+        margin: 15px;
+        padding: 5px;
+        width: 90%;
+        outline: none;
+        border: none;
+        color: goldenrod
+    }
+    input::placeholder, textarea::placeholder {
+        color: goldenrod;
+        font-size: 12px;
+    
+    }
+    .button {
+        padding: 7px;
+        width: 35%;
+        border: none;
+        background: goldenrod;
+        outline: none;
+        color: white;
+        font-size: 12px;
+    }
+
+    .newsletter-name-input, .newsletter-email-input {
+        width: 90%;
+        padding: 5px;
+        margin-bottom: 20px;
+        background: white;
+        border: .5px solid goldenrod;
+        outline: none;
+        color: goldenrod
+    }
+    
+    .newsletter-email-input::placeholder, 
+    .newsletter-name-input::placeholder {
+        color: goldenrod;
+        font-size: 12px;
+    }
+
+    .signupbutton {
+        padding: 7px;
+        width: 35%;
+        border: .5px solid white;
+        background: goldenrod;
+        outline: none;
+        color: white;
+        outline: none;
+        font-size: 12px;
+    }
+    
+    .signupbutton:hover {
+        background: white;
+        border: .5px solid goldenrod;
+        color: goldenrod;
+        outline: none;
+    }
+
+    .buy-button {
+        width: 50%;
+        height: 30px;
+        border: .5px solid goldenrod;
+        background: white;
+        outline: none;
+        color: goldenrod;
+        margin: 0 0 40px 0;
+    }
+    .buy-button:hover {
+        width: 50%;
+        height: 30px;
+        border: .5px solid goldenrod;
+        background: goldenrod;
+        outline: none;
+        color: white
+    }
+
+    .product-images {
+        text-align: left;
+        height: 250px;
+        width: 90%;
+    }
+    .product-images1 {
+        text-align: left;
+        height: 300px;
+        width: 90%;
+    }
+    .product-images2 {
+        text-align: left;
+        height: 250px;
+        width: 90%;
+    }
+    
+    .product-title {
+        color: goldenrod;
+        font-size: 16px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+
+    .logo-img {
+        height: 40px;
+        width: 40px;
+    }
+    .down-icon {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        color: goldenrod
+    }
+    .mobile-navigation {
+        display: none;
+    }
+
+    .nav-item {
+        display: block
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .nav-link {
+        padding: 0 10px;
+        font-size: 14px;
+        color: goldenrod;
+        font-weight: normal;
+        display: block;
+    }
+    
+    .nav-item .nav-link:hover {
+        position: relative;
+        top: 10px;
+        text-decoration-line: overline;
+        text-decoration-style: double;
+        color: gold
+    }
+    a {
+        color: transparent
+    }
+
 }
